@@ -37,7 +37,8 @@ public class CustomerService {
     GemFireCache cache;
     public void removeCache(String region) {
         log.info("before clearing cache:{}", cache.getRegion(region).values());
-        cache.getRegion(region).clear();
+        cache.getRegion(region)
+                .removeAll(cache.getRegion(region).keySet());
         log.info("after clearing cache:{}", cache.getRegion(region).values());
     }
 

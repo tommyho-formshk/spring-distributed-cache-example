@@ -1,6 +1,0 @@
-
-[info 2023/06/08 13:58:46.145 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(SecondApplication:98167)<ec><v0>:41001|0] members: [192.168.1.181(SecondApplication:98167)<ec><v0>:41001{lead}]
-
-[info 2023/06/08 17:14:22.887 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(SecondApplication:10740)<ec><v0>:41001|0] members: [192.168.1.181(SecondApplication:10740)<ec><v0>:41001{lead}]
-
-[info 2023/06/08 17:17:30.159 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(SecondApplication:10920)<ec><v0>:41000|0] members: [192.168.1.181(SecondApplication:10920)<ec><v0>:41000{lead}]

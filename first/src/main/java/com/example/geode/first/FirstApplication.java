@@ -58,7 +58,8 @@ public class FirstApplication {
 
 			customersByName.setCache(cache);
 			customersByName.setPersistent(PERSISTENT);
-			customersByName.setScope(Scope.GLOBAL);
+//			customersByName.setScope(Scope.GLOBAL);
+//			customersByName.setShortcut(RegionShortcut.REPLICATE);
 			customersByName.setRegionConfigurers(regionConfigurers);
 
 //			PartitionedRegionFactoryBean<String, Customer> customersByName = new PartitionedRegionFactoryBean<>();
