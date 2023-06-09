@@ -1,9 +1,7 @@
 package com.example.geode.first;
 
 import com.example.geode.common.dto.Customer;
-import org.apache.geode.cache.Cache;
-import org.apache.geode.cache.DataPolicy;
-import org.apache.geode.cache.Region;
+import org.apache.geode.cache.*;
 import org.apache.geode.cache.wan.GatewayReceiver;
 import org.apache.geode.cache.wan.GatewaySender;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
+import org.springframework.data.gemfire.PartitionedRegionFactoryBean;
 import org.springframework.data.gemfire.PeerRegionFactoryBean;
 import org.springframework.data.gemfire.ReplicatedRegionFactoryBean;
 import org.springframework.data.gemfire.config.annotation.*;
@@ -59,7 +58,14 @@ public class FirstApplication {
 
 			customersByName.setCache(cache);
 			customersByName.setPersistent(PERSISTENT);
+			customersByName.setScope(Scope.GLOBAL);
 			customersByName.setRegionConfigurers(regionConfigurers);
+
+//			PartitionedRegionFactoryBean<String, Customer> customersByName = new PartitionedRegionFactoryBean<>();
+//			customersByName.setCache(cache);
+//			customersByName.setPersistent(PERSISTENT);
+//			customersByName.setShortcut(RegionShortcut.PARTITION);
+//			customersByName.setRegionConfigurers(regionConfigurers);
 
 			return customersByName;
 		}

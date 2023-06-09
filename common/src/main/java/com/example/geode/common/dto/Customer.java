@@ -2,9 +2,11 @@ package com.example.geode.common.dto;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.gemfire.ScopeType;
 import org.springframework.data.gemfire.mapping.annotation.Region;
+import org.springframework.data.gemfire.mapping.annotation.ReplicateRegion;
 
-@Region("Customers")
+@Region(name="Customers")
 @EqualsAndHashCode
 @ToString(of = "name")
 @RequiredArgsConstructor(staticName = "newCustomer")

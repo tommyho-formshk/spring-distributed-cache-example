@@ -7,6 +7,7 @@ import org.apache.geode.cache.GemFireCache;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.gemfire.GemfireCacheUtils;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
@@ -39,9 +40,11 @@ public class CustomerService {
 
     @Autowired
     GemFireCache cache;
+
     public void removeCache(String region) {
         log.info("before clearing cache:{}", cache.getRegion(region).values());
-        cache.getRegion(region).clear();
+        cache.getRegion(region)
+                .removeAll(cache.getRegion(region).keySet());
         log.info("after clearing cache:{}", cache.getRegion(region).values());
     }
 

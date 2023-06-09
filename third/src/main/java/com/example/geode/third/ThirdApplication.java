@@ -4,6 +4,7 @@ import com.example.geode.common.dto.Customer;
 import org.apache.geode.cache.Cache;
 import org.apache.geode.cache.DataPolicy;
 import org.apache.geode.cache.Region;
+import org.apache.geode.cache.Scope;
 import org.apache.geode.cache.wan.GatewayReceiver;
 import org.apache.geode.cache.wan.GatewaySender;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,7 @@ public class ThirdApplication {
 
 			customersByName.setCache(cache);
 			customersByName.setPersistent(PERSISTENT);
+			customersByName.setScope(Scope.GLOBAL);
 			customersByName.setRegionConfigurers(regionConfigurers);
 
 			return customersByName;
