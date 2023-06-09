@@ -6,6 +6,8 @@
 
 toc::[]
 
+image::consistent_multisite.png[]
+
 == Prerquisite
 * JDK 11 or above and  below 17 (This lib rely on reflection which is not wokring in Java 17, need extra work around)
 * gradle support JDK 11 or above
