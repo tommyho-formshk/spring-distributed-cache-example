@@ -1,0 +1,180 @@
+= Spring Geode Example
+:css-signature: demo
+:toc: macro
+:toclevels: 3
+:icons: font
+
+toc::[]
+
+== Prerquisite
+* JDK 11 or above and  below 17 (This lib rely on reflection which is not wokring in Java 17, need extra work around)
+* gradle support JDK 11 or above
+
+== Usage
+For our example, we are going to build on the souce code in this repository. Caching the getCutomerByName request.
+
+=== Compatibility
+Please refer to https://github.com/spring-projects/spring-boot-data-geode/wiki/Spring-Boot-for-Apache-Geode-and-VMware-Tanzu-GemFire-Version-Compatibility-Matrix[Spring Boot for Apache Geode Compatibility Matrix]. 
+
+Mismatched dependency versions is NOT supported!!!!
+
+=== Customer class
+[source, Java]
+----
+@Region("Customers")
+// lombok
+@EqualsAndHashCode
+@ToString(of = "name")
+@RequiredArgsConstructor(staticName = "newCustomer")
+public class Customer {
+
+	@Id @Getter @NonNull
+	private Long id;
+
+	@Getter @NonNull
+	private String name;
+
+}
+----
+The Customer class is mapped to the "Customers" Region using the Spring Data Geode @Region mapping annotation. The @Region annotation is very similar in purpose to the JPA @Entity and @Table annotations. A Customer is very simply defined in terms of an id and name, which will be used to lookup a Customer.
+
+
+=== CustomerService.findBy(..) method
+[source, Java]
+----
+@Cacheable("CustomersByName")
+public Customer findBy(String name) {
+    
+}
+----
+@Cacheable works by first searching for the Customer by "name" in the "CustomerByName" cache. If an entry is found, then the cached value (i.e. Customer) is returned immediately, without invoking the findBy(..) method. 
+
+
+=== Cluster/Server Configuration
+==== Constants
+[source, Java]
+----
+private static final boolean PERSISTENT = false;
+private static final int GATEWAY_RECEIVER_END_PORT = 29779;
+private static final int GATEWAY_RECEIVER_START_PORT = 13339;
+private static final String CUSTOMERS_BY_NAME_REGION = "CustomersByName";
+private static final String GATEWAY_RECEIVER_HOSTNAME_FOR_SENDERS = "localhost";
+----
+
+==== CacheServer and "CustomersByName" Region Configuration
+[source, Java]
+----
+@CacheServerApplication(name = "FirstApplication", port = 0)
+static class GeodeServerConfiguration {
+    @Bean(CUSTOMERS_BY_NAME_REGION)
+        ReplicatedRegionFactoryBean<String, Customer> customersByName = new ReplicatedRegionFactoryBean<>();
+
+        customersByName.setCache(cache);
+        customersByName.setPersistent(PERSISTENT);
+        customersByName.setRegionConfigurers(regionConfigurers);
+		return customersByName;
+    }
+}
+----
+This first bit of configuration creates a peer Cache, a CacheServer and the "CustomersByName" REPLICATE Region.
+The CacheServer port is set to the ephemeral port (i.e. 0) to let the system allocate a port. Since the client is connecting to the cluster via a Locator, the Locator sends meta-data about the cluster to the client informing the client of the available CacheServers, which server is hosting what data, the port(s) the CacheServer(s) are listening on, and so on.
+The name of the client and server-side Region backing the cache named in the @Cacheable annotation declared on the CustomerService.findBy(..) method must match. The client-side "CustomersByName" Region is a PROXY, and therefore forwards all data access operations to the matching server-side REPLICATE Region by the same name (i.e. "CustomersByName").
+
+==== Locator and Manager Configuration
+[source, Java]
+----
+@Configuration
+@EnableLocator
+@EnableManager(start = true)
+@Profile("locator-manager")
+static class GeodeLocatorManagerConfiguration { }
+----
+If you are starting up a multi-node cluster, then you can choose whether to start an embedded Locator and Manager on a node-by-node basis. If you do, you must vary the port numbers or configure the Locator and Manager using the ephemeral port.
+
+==== GatewaySender and GatewayReceiver Configuration
+[source, Java]
+----
+@Configuration
+@Profile("gateway-receiver")
+static class GeodeGatewayReceiverConfiguration {
+
+    @Bean
+    GatewayReceiverFactoryBean gatewayReceiver(Cache cache) {
+
+        GatewayReceiverFactoryBean gatewayReceiver = new GatewayReceiverFactoryBean(cache);
+
+        gatewayReceiver.setHostnameForSenders(GATEWAY_RECEIVER_HOSTNAME_FOR_SENDERS);
+        gatewayReceiver.setStartPort(GATEWAY_RECEIVER_START_PORT);
+        gatewayReceiver.setEndPort(GATEWAY_RECEIVER_END_PORT);
+
+        return gatewayReceiver;
+    }
+}
+
+@Configuration
+@Profile("gateway-sender")
+static class GeodeGatewaySenderConfiguration {
+
+    @Bean
+    GatewaySenderFactoryBean customersByNameGatewaySender(Cache cache,
+            @Value("${geode.distributed-system.remote.id:1}") int remoteDistributedSystemId) {
+
+        GatewaySenderFactoryBean gatewaySender = new GatewaySenderFactoryBean(cache);
+
+        gatewaySender.setPersistent(PERSISTENT);
+        gatewaySender.setRemoteDistributedSystemId(remoteDistributedSystemId);
+
+        return gatewaySender;
+    }
+
+    @Bean
+    RegionConfigurer customersByNameConfigurer(GatewaySender gatewaySender) {
+
+        return new RegionConfigurer() {
+
+            @Override
+            public void configure(String beanName, PeerRegionFactoryBean<?, ?> regionBean) {
+
+                if (CUSTOMERS_BY_NAME_REGION.equals(beanName)) {
+                    regionBean.setGatewaySenders(ArrayUtils.asArray(gatewaySender));
+                }
+            }
+        };
+    }
+}
+----
+GatewaySender is for sending Region events from this cluster (i.e. cluster #1) to a remote cluster (e.g. cluster #2)
+
+
+==== application.properties
+Cluster #1
+[source]
+----
+gemfire.distributed-system-id=10 # identifier
+gemfire.remote-locators=localhost[12480] # remote locator port
+geode.distributed-system.remote.id=20 
+spring.application.name=FirstApplication
+spring.profiles.include=locator-manager,gateway-receiver,gateway-sender
+spring.data.gemfire.locator.port=11235
+spring.data.gemfire.manager.port=1199
+----
+
+
+Cluster #2
+[source]
+----
+gemfire.distributed-system-id=20
+gemfire.remote-locators=localhost[11235]
+geode.distributed-system.remote.id=10
+spring.application.name=SecondApplication
+#spring.profiles.include=locator-manager,gateway-receiver,gateway-sender
+spring.data.gemfire.locator.port=12480
+spring.data.gemfire.manager.port=2299
+----
+we can create a new server simply by varying the configuration
+
+=== Run the application
+[source]
+----
+./gradew bootRun
+----
