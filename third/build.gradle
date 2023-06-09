@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.6.2'
+	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+}
+
+group = 'com.example.geode'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.geode:spring-geode-starter:1.6.14'
+	implementation 'org.springframework.data:spring-data-geode:2.6.10'
+	implementation 'com.example.geode:common:0.0.1-SNAPSHOT'
+
+	// implementation 'org.springframework.geode:spring-geode-starter:1.7.5'
+	// implementation 'org.springframework.data:spring-data-geode:2.7.5'
+
+	implementation 'org.apache.commons:commons-lang3:3.12.0'
+	implementation "org.assertj:assertj-core"
+
+
+	compileOnly 'org.projectlombok:lombok:1.18.28'
+	annotationProcessor 'org.projectlombok:lombok:1.18.28'
+
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

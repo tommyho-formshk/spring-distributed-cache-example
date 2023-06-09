@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.example.geode'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+}
+
+apply plugin: 'maven-publish'
+
+
+dependencies {
+	compileOnly 'org.projectlombok:lombok:1.18.28'
+	annotationProcessor 'org.projectlombok:lombok:1.18.28'
+	implementation 'org.springframework.data:spring-data-geode:2.6.10'
+
+}
+
+publishing {
+	publications {
+		maven(MavenPublication) {
+			from components.java
+		}
+	}
+}

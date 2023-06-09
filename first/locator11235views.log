@@ -1,0 +1,256 @@
+
+[info 2023/06/06 13:11:56.439 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(ServerApplication:65207)<ec><v0>:41000|0] members: [192.168.1.181(ServerApplication:65207)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:12:52.503 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(ServerApplication:65207)<ec><v0>:41000 
+
+[info 2023/06/06 13:16:08.429 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(ServerApplication:65571)<ec><v0>:41000|0] members: [192.168.1.181(ServerApplication:65571)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:17:16.164 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(ServerApplication:65582)<ec><v0>:41000|0] members: [192.168.1.181(ServerApplication:65582)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:18:12.193 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(ServerApplication:65582)<ec><v0>:41000 
+
+[info 2023/06/06 13:18:38.653 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:65593)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:65593)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:19:34.987 HKT <Cache Server Load Polling Thread> tid=0x3e] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:65593)<ec><v0>:41000 
+
+[info 2023/06/06 13:23:14.399 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:65676)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:65676)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:24:10.610 HKT <Cache Server Load Polling Thread> tid=0x3e] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:65676)<ec><v0>:41000 
+
+[info 2023/06/06 13:44:33.670 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:65932)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:65932)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 13:45:29.723 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:65932)<ec><v0>:41000 
+
+[info 2023/06/06 14:23:39.827 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:66470)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:66470)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 14:29:40.979 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:66532)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:66532)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 14:30:29.242 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:66550)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:66550)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 14:31:25.475 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:66550)<ec><v0>:41000 
+
+[info 2023/06/06 14:31:58.101 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:66586)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:66586)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:21:18.485 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(server-site1:67216)<ec><v0>:41000|0] members: [192.168.1.181(server-site1:67216)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:22:36.013 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(server-site1:67234)<ec><v0>:41000|0] members: [192.168.1.181(server-site1:67234)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:23:32.199 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(server-site1:67234)<ec><v0>:41000 
+
+[info 2023/06/06 15:24:17.508 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(server-site1:67292)<ec><v0>:41000|0] members: [192.168.1.181(server-site1:67292)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:25:13.743 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(server-site1:67292)<ec><v0>:41000 
+
+[info 2023/06/06 15:27:58.296 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(server-site1:67343)<ec><v0>:41000|0] members: [192.168.1.181(server-site1:67343)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:28:54.608 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(server-site1:67343)<ec><v0>:41000 
+
+[info 2023/06/06 15:49:29.049 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:67584)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:67584)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:49:54.440 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:67600)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:67600)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:50:50.637 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:67600)<ec><v0>:41000 
+
+[info 2023/06/06 15:51:31.110 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:67625)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:67625)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 15:52:27.258 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:67625)<ec><v0>:41000 
+
+[info 2023/06/06 16:18:14.054 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:67972)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:67972)<ec><v0>:41001{lead}]
+
+[info 2023/06/06 16:20:42.717 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:68297)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:68297)<ec><v0>:41001{lead}]
+
+[info 2023/06/06 16:25:00.972 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:68369)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:68369)<ec><v0>:41001{lead}]
+
+[info 2023/06/06 16:32:34.031 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:68456)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:68456)<ec><v0>:41001{lead}]
+
+[info 2023/06/06 16:51:25.262 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:70618)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:70618)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 16:52:26.305 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70618)<ec><v0>:41000 
+
+[info 2023/06/06 16:53:35.218 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:70670)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:70670)<ec><v0>:41000{lead}]
+
+[info 2023/06/06 16:54:31.612 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/06 17:55:04.298 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/06 18:55:37.755 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/06 20:13:39.012 HKT <Cache Server Load Polling Thread> tid=0x51] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/07 07:03:35.788 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/07 11:36:22.965 HKT <Cache Server Load Polling Thread> tid=0x51] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/07 12:43:31.243 HKT <Cache Server Load Polling Thread> tid=0x51] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:70670)<ec><v0>:41000 
+
+[info 2023/06/07 13:47:05.442 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75089)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75089)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 13:48:01.518 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:75089)<ec><v0>:41000 
+
+[info 2023/06/07 13:52:52.614 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75204)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75204)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 13:53:48.840 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:75204)<ec><v0>:41000 
+
+[info 2023/06/07 13:54:25.944 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75230)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75230)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 13:55:22.260 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:75230)<ec><v0>:41000 
+
+[info 2023/06/07 13:58:10.284 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75387)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75387)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 14:01:09.854 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75490)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75490)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 14:02:05.898 HKT <Cache Server Load Polling Thread> tid=0x3f] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:75490)<ec><v0>:41000 
+
+[info 2023/06/07 14:23:36.004 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:75864)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:75864)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 14:26:52.944 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:76250)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:76250)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 14:27:54.009 HKT <Cache Server Load Polling Thread> tid=0x40] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:76250)<ec><v0>:41001 
+
+[info 2023/06/07 14:41:10.690 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:76486)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:76486)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 14:42:11.641 HKT <Cache Server Load Polling Thread> tid=0x42] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:76486)<ec><v0>:41000 
+
+[info 2023/06/07 15:08:27.076 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:76964)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:76964)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 15:12:00.766 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77028)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:77028)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 15:15:03.302 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77082)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:77082)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 15:15:59.387 HKT <Cache Server Load Polling Thread> tid=0x42] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:77082)<ec><v0>:41000 
+
+[info 2023/06/07 15:18:00.065 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77149)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:77149)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 15:42:08.827 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77639)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:77639)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 15:47:45.527 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77782)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:77782)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 15:48:46.563 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:77782)<ec><v0>:41000 
+
+[info 2023/06/07 15:53:11.494 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77823)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:77823)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 15:55:16.933 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77842)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:77842)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 16:02:06.927 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77924)<ec><v0>:41001|0] members: [192.168.1.181(FirstApplication:77924)<ec><v0>:41001{lead}]
+
+[info 2023/06/07 16:03:53.909 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:77962)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:77962)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 16:04:55.036 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:77962)<ec><v0>:41000 
+
+[info 2023/06/07 17:12:00.203 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:89113)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:89113)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 17:12:56.226 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:89113)<ec><v0>:41000 
+
+[info 2023/06/07 17:20:46.411 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:89237)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:89237)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 17:21:42.372 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:89237)<ec><v0>:41000 
+
+[info 2023/06/07 17:22:23.471 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:89265)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:89265)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 17:23:19.366 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:89265)<ec><v0>:41000 
+
+[info 2023/06/07 17:27:29.650 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:89341)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:89341)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 17:31:55.317 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:89391)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:89391)<ec><v0>:41000{lead}]
+
+[info 2023/06/07 18:29:15.345 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:90290)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:90290)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 13:56:37.806 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:98033)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:98033)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 13:57:33.944 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:98033)<ec><v0>:41000 
+
+[info 2023/06/08 17:13:29.933 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:10673)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:10673)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 17:14:26.191 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:10673)<ec><v0>:41000 
+
+[info 2023/06/08 17:20:23.826 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:11097)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:11097)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 17:21:19.896 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:11097)<ec><v0>:41000 
+
+[info 2023/06/08 17:37:49.840 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:12236)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:12236)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 17:38:45.864 HKT <Cache Server Load Polling Thread> tid=0x40] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:12236)<ec><v0>:41000 
+
+[info 2023/06/08 17:40:22.318 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:12712)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:12712)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 17:41:18.579 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:12712)<ec><v0>:41000 
+
+[info 2023/06/08 17:55:41.826 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.181(FirstApplication:13790)<ec><v0>:41000|0] members: [192.168.1.181(FirstApplication:13790)<ec><v0>:41000{lead}]
+
+[info 2023/06/08 17:56:37.868 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:13790)<ec><v0>:41000 
+
+[info 2023/06/08 18:57:10.016 HKT <Cache Server Load Polling Thread> tid=0x43] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.181(FirstApplication:13790)<ec><v0>:41000 
+
+[info 2023/06/09 16:17:11.087 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:31517)<ec><v0>:41002|0] members: [192.168.1.142(FirstApplication:31517)<ec><v0>:41002{lead}]
+
+[info 2023/06/09 16:18:07.116 HKT <Cache Server Load Polling Thread> tid=0x46] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:31517)<ec><v0>:41002 
+
+[info 2023/06/09 16:26:17.538 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:32207)<ec><v0>:41002|0] members: [192.168.1.142(FirstApplication:32207)<ec><v0>:41002{lead}]
+
+[info 2023/06/09 16:27:13.582 HKT <Cache Server Load Polling Thread> tid=0x45] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:32207)<ec><v0>:41002 
+
+[info 2023/06/09 16:34:42.188 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:32750)<ec><v0>:41002|0] members: [192.168.1.142(FirstApplication:32750)<ec><v0>:41002{lead}]
+
+[info 2023/06/09 16:43:42.609 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:33293)<ec><v0>:41002|0] members: [192.168.1.142(FirstApplication:33293)<ec><v0>:41002{lead}]
+
+[info 2023/06/09 16:44:38.780 HKT <Cache Server Load Polling Thread> tid=0x45] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:33293)<ec><v0>:41002 
+
+[info 2023/06/09 16:58:36.917 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:34372)<ec><v0>:41000|0] members: [192.168.1.142(FirstApplication:34372)<ec><v0>:41000{lead}]
+
+[info 2023/06/09 16:59:32.898 HKT <Cache Server Load Polling Thread> tid=0x44] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:34372)<ec><v0>:41000 
+
+[info 2023/06/09 17:20:12.410 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:35564)<ec><v0>:41000|0] members: [192.168.1.142(FirstApplication:35564)<ec><v0>:41000{lead}]
+
+[info 2023/06/09 17:21:08.385 HKT <Cache Server Load Polling Thread> tid=0x45] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:35564)<ec><v0>:41000 
+
+[info 2023/06/09 17:30:35.540 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:36156)<ec><v0>:41000|0] members: [192.168.1.142(FirstApplication:36156)<ec><v0>:41000{lead}]
+
+[info 2023/06/09 17:30:52.305 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:36189)<ec><v0>:41000|0] members: [192.168.1.142(FirstApplication:36189)<ec><v0>:41000{lead}]
+
+[info 2023/06/09 17:32:09.189 HKT <main> tid=0x1] Log opened with new distributed system connection.  View[192.168.1.142(FirstApplication:36269)<ec><v0>:41000|0] members: [192.168.1.142(FirstApplication:36269)<ec><v0>:41000{lead}]
+
+[info 2023/06/09 17:33:05.162 HKT <Cache Server Load Polling Thread> tid=0x45] server count: 1 connected client count: 0 client subscription queue count: 0.0
+  current servers : 192.168.1.142(FirstApplication:36269)<ec><v0>:41000 
